@@ -2,65 +2,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Skranji:wght@400;700&display=swap");
 
 /* RESETEO */
-/* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
   font-family: "Skranji", cursive;
 }
 
 /* HEADER - MENU */
-/*header {
-  background-image: url(../img/pexels-life-of-pix-8892.jpg);
+.header {
+  background-image: url(../img/fondo-piedra.jpg);
   background-size: cover;
   background-repeat: repeat;
   position: sticky;
   top: 0px;
   width: 100%;
-  max-height: 8rem;
+  max-height: 7rem;
 }
 
-div {
+/* div {
   text-align: center;
-}
+} */
 
 .logoPrincipal {
   width: 14rem;
   height: 7.5rem;
-  position: relative;
-  top: 0.3rem;
-  right: 25rem;
 }
 
 ul li {
   -webkit-text-stroke: 1px yellow;
-  display: inline;
   font-size: x-large;
-  position: relative;
-  bottom: 4.5rem;
-  left: 10rem;
-  margin: 1rem;
 }
 
-ul li a {
+.inactiva {
   -webkit-text-stroke: 1px black;
   color: #dfdfdf;
-  text-decoration: none;
 }
 
 .activa {
   -webkit-text-stroke: 1px yellow;
   color: #eb0005;
-  text-decoration: none;
 }
 
-a:hover {
+a.activa:hover, a.inactiva:hover {
   color: #eb0005;
   -webkit-text-stroke: 1px yellow;
 }
+
 /* HEADER - MENU */
 
 /* CONTENIDO PRINCIPAL */
+.size-slider {
+  width: 100vw;
+  height: 26rem;
+}
 /*.fondo {
   background-image: url(../img/back-florest-JP.jpg);
   background-repeat: repeat;
