@@ -1,11 +1,7 @@
 /* FUENTE */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Skranji:wght@400;700&display=swap");
 
-/* RESETEO */
 *{
-  /* margin: 0; */
-  /* padding: 0; */
-  /* box-sizing: border-box; */
   font-family: "Skranji", cursive;
 }
 
@@ -13,20 +9,7 @@
 .header {
   background-image: url(../img/fondo-piedra.jpg);
   background-size: cover;
-  background-repeat: repeat;
   position: sticky;
-  top: 0px;
-  width: 100%;
-  max-height: 7rem;
-}
-
-/* div {
-  text-align: center;
-} */
-
-.logoPrincipal {
-  width: 14rem;
-  height: 7.5rem;
 }
 
 ul li {
@@ -34,15 +17,16 @@ ul li {
   font-size: x-large;
 }
 
+.activa {
+  -webkit-text-stroke: 1px yellow;
+  color: #eb0005;
+}
+
 .inactiva {
   -webkit-text-stroke: 1px black;
   color: #dfdfdf;
 }
 
-.activa {
-  -webkit-text-stroke: 1px yellow;
-  color: #eb0005;
-}
 
 a.activa:hover, a.inactiva:hover {
   color: #eb0005;
@@ -56,16 +40,18 @@ a.activa:hover, a.inactiva:hover {
   width: 100vw;
   height: 26rem;
 }
-/*.fondo {
+
+
+.fondo {
   background-image: url(../img/back-florest-JP.jpg);
   background-repeat: repeat;
-  background-position: 100%;
+  background-size: cover;
 }
 
-h3 {
+/* h3 {
   color: rgb(255, 255, 255);
   text-align: center;
-}
+} */
 
 p {
   color: rgb(255, 255, 255);
@@ -80,6 +66,42 @@ p {
   font-size: large;
   -webkit-text-stroke: 1px #eb0005;
   color: yellow;
+}
+
+.invitacion1-2 {
+  width: 80vw;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #536976;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: solid 5px #292E49;
+  border-radius: 2rem;
+}
+
+h1.tituloInvitacion1, h1.tituloInvitacion2 {
+  padding-top: 2rem;
+  margin-top: 0.5;
+  text-align: center;
+  font-size: 2rem;
+  -webkit-text-stroke: 1px black;
+  color: #dfdfdf;
+}
+
+.imgInvitacion1 {
+  margin: 2rem 4rem 2rem 0;
+  width: 25rem;
+	height: 18rem;
+  border: solid 2px #292E49;
+  border-radius: 3%;
+}
+
+.imgInvitacion2 {
+  margin: 2rem 0 2rem 4rem;
+  width: 22rem;
+	height: 23rem;
+  border: solid 2px #292E49;
+  border-radius: 3%;
 }
 
 nav ol li {
@@ -107,36 +129,14 @@ form {
 /* CONTENIDO PRINCIPAL */
 
 /* PIE DE PAGINA */
-/*footer {
-  background-image: url(../img/pexels-life-of-pix-8892.jpg);
+.footer {
+  background-image: url(../img/fondo-piedra.jpg);
   background-size: cover;
-  width: 100%;
+  padding: 20px 0px 5px 0px;
 }
 
-.cuerpoFooter{
-    position: relative;
-}
-
-
-div.redes{
-    display: inline-block;
-}
-
-div.redes img {
-  width: 5rem;
-  height: 5rem;
-  display: inline;
-  position: relative;
-  left: 28rem;
-  margin: 1px;
-}
-
-div p a {
-    -webkit-text-stroke: 1px black;
-    color: #dfdfdf;
-    text-decoration: none;
-    position: relative;
-    left: 27rem;
-    margin: 1rem;
+p.redes{
+    margin: 5px 5px;
+    padding: 5px 5px;
 }
 /* PIE DE PAGINA */
