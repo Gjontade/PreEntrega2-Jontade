@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Bootstrap -->
+		<script src="../js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<!-- CSS -->
 		<link rel="stylesheet" href="../css/style.css" />
@@ -15,17 +16,14 @@
 			type="image/x-icon" />
 		<title>SERVICIOS</title>
 	</head>
+
 	<body class="fondo">
 		<!-- ENCABEZADO -->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
-				<div class="container-fluid">
+				<div class="container-fluid text-center">
 					<a class="navbar-brand" href="../index.html">
-						<img
-							src="../img/logo-principal.png"
-							alt="logo de jurassic park"
-							width="225rem"
-							height="125rem" />
+						<img src="../img/logo-principal.png" alt="logo de jurassic park" />
 					</a>
 					<button
 						class="navbar-toggler"
@@ -37,7 +35,9 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+					<div
+						class="collapse navbar-collapse justify-content-around"
+						id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link inactiva" href="../index.html">INICIO</a>
@@ -61,11 +61,11 @@
 		</header>
 
 		<!-- CONTENIDO PRINCIPAL -->
-		<main>
-			<section>
-				<h3 class="tituloMenu">
+		<main class="container">
+			<section class="row">
+				<h1 class="tituloMenu">
 					Organice su proximo evento en JURASSIC PARK - THE RESTAURANT
-				</h3>
+				</h1>
 				<p>
 					Jurassic Park - The Restaurant acepta reservas para grupos de 15 o más
 					personas cada 90 minutos dependiendo de la fecha, hora y
@@ -78,6 +78,64 @@
 					propuestas...
 				</p>
 			</section>
+
+			<article class="row mt-5">
+				<section class="col-xs-12 col-lg-4 col-xl-4 tarjetas">
+					<a href="./contacto.html">
+						<div>
+							<img
+								src="../img/salon3-jp.png"
+								alt="salon del restaurant"
+								class="img-evento" />
+							<h3 class="mt-3">Fiestas de Cumpleaños</h3>
+							<p class="textoEventos">
+								Únete a nosotros para una experiencia temática única rodeada de
+								dinosaurios. Deliciosa comida, decoración impresionante y
+								opciones personalizadas para hacer de tu cumpleaños un evento
+								inolvidable. ¡Contáctanos para más detalles y reserva tu fecha!
+							</p>
+						</div>
+					</a>
+				</section>
+
+				<section class="col-xs-12 col-lg-4 col-xl-4 tarjetas">
+					<a href="./contacto.html">
+						<div>
+							<img
+								src="../img/salon-jp.png"
+								alt="salon corporativo"
+								class="img-evento" />
+							<h3 class="mt-3">Eventos Corporativos</h3>
+							<p class="textoEventos">
+								Te invitamos a disfrutar de un ambiente temático fascinante
+								mientras celebras tus reuniones de negocios, conferencias o
+								eventos corporativos. Nuestro espacio exclusivo, combinado con
+								deliciosa comida y un servicio excepcional, creará una
+								experiencia memorable para tus invitados.
+							</p>
+						</div>
+					</a>
+				</section>
+
+				<section class="col-xs-12 col-lg-4 col-xl-4 tarjetas">
+					<a href="./contacto.html">
+						<div>
+							<img
+								src="../img/salon2-jp.png"
+								alt="recepcion restaurant"
+								class="img-evento" />
+							<h3 class="mt-3">Excursiones Educativas y mas...</h3>
+							<p class="textoEventos">
+								En Jurassic Park - The Restaurant, ofrecemos paquetes educativos
+								personalizados que incluyen visitas guiadas, actividades
+								interactivas y opciones de menús adaptados a las necesidades de
+								los estudiantes. Nuestro objetivo es proporcionar un ambiente
+								enriquecedor que combine entretenimiento y conocimiento.
+							</p>
+						</div>
+					</a>
+				</section>
+			</article>
 		</main>
 
 		<!-- PIE DE PAGINA -->

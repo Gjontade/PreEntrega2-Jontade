@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="./js/bootstrap.min.js"></script>
 		<!-- Bootstrap -->
+		<script src="./js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/style.css" />
@@ -20,13 +20,9 @@
 		<!-- ENCABEZADO -->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
-				<div class="container-fluid">
+				<div class="container-fluid text-center">
 					<a class="navbar-brand" href="./index.html">
-						<img
-							src="./img/logo-principal.png"
-							alt="logo de jurassic park"
-							width="225rem"
-							height="125rem" />
+						<img src="./img/logo-principal.png" alt="logo de jurassic park" />
 					</a>
 					<button
 						class="navbar-toggler"
@@ -70,7 +66,6 @@
 		</header>
 
 		<!-- CONTENIDO PRINCIPAL -->
-
 		<main>
 			<!-- Slider -->
 			<div id="carouselExample" class="carousel slide">
@@ -99,7 +94,9 @@
 					type="button"
 					data-bs-target="#carouselExample"
 					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span
+						class="carousel-control-prev-icon position-relative"
+						aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<button
@@ -107,14 +104,17 @@
 					type="button"
 					data-bs-target="#carouselExample"
 					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span
+						class="carousel-control-next-icon position-relative"
+						aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
 
-			<article class="container invitacion1-2">
+			<!-- Presentacion -->
+			<section class="container text-center invitacion1-2">
 				<div class="row">
-					<div class="col-xl-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-xl-5">
 						<h1 class="tituloInvitacion1">NUESTRA COMIDA</h1>
 						<p>
 							Nuestro talentoso equipo de chefs ha creado un menú cautivador que
@@ -123,23 +123,23 @@
 							era prehistórica de sabores audaces y exquisitos.
 						</p>
 					</div>
-					<div class="col-xl-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-xl-7">
 						<img
 							src="./img/salmon-jurassic.png"
 							alt="plato salmon gourmet"
-							class="imgInvitacion1" />
+							class="imgInvitacion1 img-fluid mx-auto" />
 					</div>
 				</div>
-			</article>
-			<article class="container invitacion1-2">
+			</section>
+			<section class="container text-center invitacion1-2">
 				<div class="row">
-					<div class="col-xl-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-xl-7">
 						<img
 							src="./img/salon-jp.png"
 							alt="salon restaurant"
-							class="imgInvitacion2" />
+							class="imgInvitacion2 img-fluid mx-auto" />
 					</div>
-					<div class="col-xl-6">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-xl-5">
 						<h1 class="tituloInvitacion2">AMBIENTACIÓN</h1>
 						<p>
 							Mientras saboreas nuestros platos únicos, podrás sumergirte en un
@@ -151,7 +151,7 @@
 						</p>
 					</div>
 				</div>
-			</article>
+			</section>
 		</main>
 
 		<!-- PIE DE PAGINA -->

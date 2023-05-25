@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Bootstrap -->
+		<script src="../js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<!-- CSS -->
 		<link rel="stylesheet" href="../css/style.css" />
@@ -19,13 +20,9 @@
 		<!-- ENCABEZADO -->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
-				<div class="container-fluid">
+				<div class="container-fluid text-center">
 					<a class="navbar-brand" href="../index.html">
-						<img
-							src="../img/logo-principal.png"
-							alt="logo de jurassic park"
-							width="225rem"
-							height="125rem" />
+						<img src="../img/logo-principal.png" alt="logo de jurassic park" />
 					</a>
 					<button
 						class="navbar-toggler"
@@ -37,7 +34,9 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+					<div
+						class="collapse navbar-collapse justify-content-around"
+						id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link inactiva" href="../index.html">INICIO</a>
@@ -63,48 +62,80 @@
 		</header>
 
 		<!-- CONTENIDO PRINCIPAL -->
-		<main>
-			<div>
-				<p class="tituloMenu">
-					¡Esperamos que disfrutes de estos platos temáticos en "Jurassic Park -
-					The Restaurant"!
-				</p>
-				<nav>
-					<ol>
-						<li>
-							"T-Rex Steak": Un jugoso filete de carne de res a la parrilla,
-							servido con una guarnición de papas rústicas y vegetales asados.
-							Este plato es ideal para los amantes de la carne, con un tamaño de
-							porción que seguro satisfará el apetito más voraz.
-						</li>
-						<li>
-							"Brontosaurus Burger": Una hamburguesa gigante con carne de res a
-							la parrilla, lechuga, tomate, queso cheddar y una salsa especial
-							de la casa. Acompañada de papas fritas, esta hamburguesa es un
-							plato perfecto para compartir o para aquellos que deseen un plato
-							más informal.
-						</li>
-						<li>
-							"Raptor Ravioli": Deliciosos raviolis rellenos de espinacas y
-							ricotta, servidos con una salsa de tomate y albahaca. Este plato
-							es perfecto para los vegetarianos y aquellos que buscan una opción
-							más ligera.
-						</li>
-						<li>
-							"Triceratops Tacos": Tacos de carne de cerdo desmenuzada, servidos
-							en tortillas de maíz con guacamole, cebolla y cilantro fresco.
-							Este plato es perfecto para aquellos que quieren probar algo
-							diferente y lleno de sabor.
-						</li>
-						<li>
-							"Pterodactyl Pasta": Fettuccine con una salsa cremosa de hongos y
-							hierbas frescas, decorado con camarones y vieiras. Este plato es
-							una opción más elegante y sofisticada para aquellos que buscan una
-							cena especial.
-						</li>
-					</ol>
-				</nav>
-			</div>
+		<main class="container-fluid">
+			<section class="row col-12">
+				<aside class="col-xl-3 d-flex flex-column justify-content-around">
+					<img
+						src="../img/salmon-jurassic.png"
+						alt="plato de salmon"
+						class="imgColumnas" />
+					<img
+						src="../img/burguer1-jurassic.png"
+						alt="hamburguesa"
+						class="imgColumnas" />
+					<img
+						src="../img/fideos-jurassic.png"
+						alt="plato de fideos"
+						class="imgColumnas" />
+				</aside>
+
+				<div class="col-xs-12 col-xl-6">
+					<h1 class="tituloMenu">
+						¡Disfruta estos platos temáticos en "JP
+						- The Restaurant"!
+					</h1>
+					<nav>
+						<ol>
+							<li>
+								<strong>"T-Rex Steak":</strong> Un jugoso filete de carne de res a la parrilla,
+								servido con una guarnición de papas rústicas y vegetales asados.
+								Este plato es ideal para los amantes de la carne, con un tamaño
+								de porción que seguro satisfará el apetito más voraz.
+							</li>
+							<li>
+								<strong>"Brontosaurus Burger":</strong> Una hamburguesa gigante con carne de res
+								a la parrilla, lechuga, tomate, queso cheddar y una salsa
+								especial de la casa. Acompañada de papas fritas, esta
+								hamburguesa es un plato perfecto para compartir o para aquellos
+								que deseen un plato más informal.
+							</li>
+							<li>
+								<strong>"Raptor Ravioli":</strong> Deliciosos raviolis rellenos de espinacas y
+								ricotta, servidos con una salsa de tomate y albahaca. Este plato
+								es perfecto para los vegetarianos y aquellos que buscan una
+								opción más ligera.
+							</li>
+							<li>
+								<strong>"Triceratops Tacos":</strong> Tacos de carne de cerdo desmenuzada,
+								servidos en tortillas de maíz con guacamole, cebolla y cilantro
+								fresco. Este plato es perfecto para aquellos que quieren probar
+								algo diferente y lleno de sabor.
+							</li>
+							<li>
+								<strong>"Pterodactyl Pasta":</strong> Fettuccine con una salsa cremosa de hongos
+								y hierbas frescas, decorado con camarones y vieiras. Este plato
+								es una opción más elegante y sofisticada para aquellos que
+								buscan una cena especial.
+							</li>
+						</ol>
+					</nav>
+				</div>
+
+				<aside class="col-xl-3 d-flex flex-column justify-content-around">
+					<img
+						src="../img/tacos-jurassic.png"
+						alt="tacos mejicanos"
+						class="imgColumnas" />
+					<img
+						src="../img/pollo-jurassic.png"
+						alt="plato de pollo"
+						class="imgColumnas" />
+					<img
+						src="../img/burguer2-jurassic.png"
+						alt="hamburguesa invertida"
+						class="imgColumnas" />
+				</aside>
+			</section>
 		</main>
 
 		<!-- PIE DE PAGINA -->

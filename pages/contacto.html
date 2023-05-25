@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Bootstrap -->
+		<script src="../js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<!-- CSS -->
 		<link rel="stylesheet" href="../css/style.css" />
@@ -15,17 +16,14 @@
 			type="image/x-icon" />
 		<title>CONTACTO</title>
 	</head>
+
 	<body class="fondo">
 		<!-- ENCABEZADO -->
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
-				<div class="container-fluid">
+				<div class="container-fluid text-center">
 					<a class="navbar-brand" href="../index.html">
-						<img
-							src="../img/logo-principal.png"
-							alt="logo de jurassic park"
-							width="225rem"
-							height="125rem" />
+						<img src="../img/logo-principal.png" alt="logo de jurassic park" />
 					</a>
 					<button
 						class="navbar-toggler"
@@ -37,7 +35,9 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+					<div
+						class="collapse navbar-collapse justify-content-around"
+						id="navbarNav">
 						<ul class="navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link inactiva" href="../index.html">INICIO</a>
@@ -64,41 +64,97 @@
 
 		<!-- CONTENIDO PRINCIPAL -->
 		<main>
-			<form action="" method="get" enctype="application/x-www-form-urlencoded">
-				<fieldset>
-					<legend>FOMULARIO DE RESERVA</legend>
-					<div class="reserva">
-						<label for="nombre">Nombre y Apellido:</label>
-						<input type="text" name="nombre y apellido" placeholder="" />
+			<!-- Formulario -->
+			<form class="container col-xs-6 col-xl-6 my-5">
+				<legend class="formulario">FORMULARIO DE RESERVA</legend>
+				<div class="row col-xs-12 col-sm-12 col-mb-12 col-xl-12">
+					<label for="nombre" class="col-sm-12 col-form-label"
+						>Nombre y Apellido</label
+					>
+					<div class="col-sm-12">
+						<input
+							type="text"
+							class="form-control border border-warning border-5"
+							id="nombre"
+							placeholder="Nombre y Apellido" />
 					</div>
-					<div>
-						<label for="mail">Mail:</label>
-						<input type="mail" name="correo" placeholder="" />
+
+					<div class="row col-xs-12 col-sm-12 col-mb-12 col-xl-12">
+						<label for="email" class="col-sm-12 col-form-label">Correo</label>
+						<div class="col-sm-12">
+							<input
+								type="email"
+								class="form-control border border-warning border-5"
+								id="email"
+								placeholder="email@example.com" />
+						</div>
 					</div>
-					<div>
-						<label for="telefono">Telefono:</label>
-						<input type="tel" name="telefono" placeholder="" />
+
+					<div class="row col-xs-12 col-sm-12 col-mb-12 col-xl-12">
+						<label for="telefono" class="col-sm-12 col-form-label"
+							>Telefono</label
+						>
+						<div class="col-sm-12">
+							<input
+								type="tel"
+								class="form-control border border-warning border-5"
+								id="telefono"
+								placeholder="15-xxxx-xxxx" />
+						</div>
 					</div>
-					<div>
-						<label for="comenzales">Comenzales:</label>
-						<input type="number" name="comenzales" placeholder="" />
+
+					<div class="row col-xs-12 col-sm-12 col-mb-12 col-xl-12">
+						<label for="comenzales" class="col-sm-12 col-form-label"
+							>Comenzales</label
+						>
+						<div class="col-sm-12">
+							<input
+								type="number"
+								class="form-control border border-warning border-5"
+								id="comenzales"
+								placeholder="cantidad de personas" />
+						</div>
 					</div>
-					<div>
-						<label for="fecha">Fecha:</label>
-						<input type="date" name="fecha" />
+
+					<div class="row col-xs-12 col-sm-12 col-mb-12 col-xl-12">
+						<label for="fecha" class="col-sm-12 col-form-label">Fecha</label>
+						<div class="col-sm-12">
+							<input
+								type="date"
+								class="form-control border border-warning border-5"
+								id="fecha" />
+						</div>
 					</div>
-					<div>
-						<label for="hora">Horario:</label>
-						<input type="time" name="hora" id="" />
+
+					<div class="row col-xs-12 col-sm-12 col-mb-12 col-xl-12">
+						<label for="hora" class="col-sm-12 col-form-label">Hora</label>
+						<div class="col-sm-12">
+							<input
+								type="time"
+								class="form-control border border-warning border-5"
+								id="hora" />
+						</div>
 					</div>
-					<div>
-						<label for="checkbox">Suscribirme al Newsleter</label>
-						<input type="checkbox" name="suscrito" />
+
+					<div class="row col-xs-12 col-sm-12 col-mb-12">
+						<div class="col-sm-10 offset-sm-2">
+							<div class="form-check newsleter">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="gridCheck1" />
+								<label class="form-check-label" for="gridCheck1">
+									Deseo suscribirme al Newsleter
+								</label>
+							</div>
+						</div>
+						<button
+							type="submit"
+							class="btn btn-warning border border-danger border-5">
+							Reservar
+						</button>
 					</div>
-					<div>
-						<input type="submit" name="enviar" />
-					</div>
-				</fieldset>
+				</div>
 			</form>
 		</main>
 
